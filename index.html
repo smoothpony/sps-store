@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, default-scale=1" name="viewport">
+<title>Bogus Values</title>
+<link rel="stylesheet" href="jquery.mobile-1.1.0/m.store.nuttle.net.min.css"/>
+<link rel="stylesheet" href="jquery.mobile-1.1.0/jquery.mobile.structure-1.1.0.min.css"/>
+<link rel="stylesheet" href="css/store.css"/>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mbox.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script src="js/store.js"></script>
+</head>
+<body>
+<div class="mboxDefault"></div>
+<script>
+mboxCreate("mglobal", "page=home");
+</script>
+<div data-role="page" data-theme="a" data-title="Bogus Values" id="home">
+	<div data-role="header" data-position="fixed">
+		<a data-role="button" data-icon="home" data-iconpos="notext" href="home.htm" data-ajax="false"></a>
+		<h1>Bogus Values</h1>
+	</div>
+	<div data-role="content">
+		<div class="mboxDefault">
+			<a class="logo" href="home.htm" data-ajax="false"></a>
+			<a class="cart" href="cart.htm" data-ajax="false"></a>
+			<div class="clearboth"></div>
+		</div>
+		<script>
+			mboxCreate("mbanner");
+		</script>
+		<br/>
+		<ul data-role="listview" data-inset="true" data-theme="a">
+			<li data-role="list-divider">Shop by Category</li>
+			<li><a href="category.htm?catid=1" data-ajax="false">Men</a></li>
+			<li><a href="category.htm?catid=2" data-ajax="false">Women</a></li>
+			<li><a href="category.htm?catid=3" data-ajax="false">Boys</a></li>
+			<li><a href="category.htm?catid=4" data-ajax="false">Girls</a></li>
+			<li><a href="category.htm?catid=5" data-ajax="false">On Sale</a></li>
+		</ul>
+		<a data-role="button" data-icon="star">Today's Deal!</a>
+	</div>
+	<div data-role="footer" class="ui-bar" data-position="fixed">
+		<div class="ui-grid-b">
+			<div class="ui-block-a footerlink">
+				<a data-role="button" href="#">Contact</a>
+			</div>
+			<div class="ui-block-b footerlink">
+				<a data-role="button" href="#">Sign Up</a>
+			</div>
+			<div class="ui-block-c footerlink">
+				<a data-role="button" href="#">Careers</a>
+			</div>
+		</div>
+	</div>
+</div><!-- /page -->
+</body>
+</html>
